@@ -194,7 +194,7 @@ h1,h2,h3,h4,h5,h6 {
 a.filled-button {
 	background-color: #FFD700	;
 	color: #000;
-	font-size: 13px;
+	font-size: 15px;
 	text-transform: uppercase;
 	font-weight: 700;
 	padding: 12px 30px;
@@ -205,8 +205,8 @@ a.filled-button {
 
 
 a.filled-button:hover {
-	 background-color:  #FFD700;
-	color:#000	; 
+	background-color:  #000;
+	color:#FFD700	; 
 	transform: scale(1.07) perspective(1px)
 
 }
@@ -225,8 +225,8 @@ a.border-button {
 }
 
 a.border-button:hover {
-	background-color: #FFD700;
-	color: #fff	;
+	background-color: #000;
+	color: #FFD700	;
 }
 .menu {
 	position: relative;
@@ -284,7 +284,7 @@ a.border-button:hover {
   display: block;
   overflow: hidden;
   position: relative;
-  text-align: center
+  text-align: center;
 }
 
 .img-fill img {
@@ -326,13 +326,14 @@ a.border-button:hover {
 	background-position: center center;
 	background-repeat: no-repeat;
 	height:95vh;
+
 }
 
 .Modern-Slider .item-1 .img-fill {
-	background-image: url(../images/home4.jpg);
+	background-image: url(../images/home8.jpg);
 }
 .Modern-Slider .item-2 .img-fill {
-	background-image: url(../images/home5.jpg);
+	background-image: url(../images/home7.jpg);
 }
 
 .Modern-Slider .NextArrow{
@@ -378,13 +379,26 @@ ul.slick-dots {
 }
 
 .Modern-Slider .text-content {
-	text-align: left;
+	text-align: center;
   	width: 75%;
   	position: absolute;
   	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
+
+	
+	
 }
+.Modern-Slider .text-content.more-info-content {
+   background-color: rgba(0,0,0,0.25);
+   padding: auto;
+  position: relative;
+  width: 550px;
+  height: 350px;
+  left:300px;
+  right: auto;
+   
+} 
 
 .Modern-Slider .item h6 {
   margin-bottom: 15px;
@@ -399,17 +413,19 @@ ul.slick-dots {
 .Modern-Slider .item h4 {
   margin-bottom: 30px;
   text-transform: uppercase;
-  font-size: 44px;
+  font-size: 55px;
   font-weight: 700;
   letter-spacing: 2.5px;
-  color:#fff;
+  color:#000;
   overflow:hidden;
   animation:fadeOutLeft 1s both;
+ 
+  
 }
 
 .Modern-Slider .item p {
 	max-width: 570px;
-	color: #fff;
+	color: #000;
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 30px;
@@ -461,36 +477,41 @@ ul.slick-dots {
 	background-color: #000;
 	padding: 60px 0px;
 	color: #fff;
+
 }
 
 /* about image */
 .section-padding {
     padding: 20px 0;
+	margin-top: 50px;
+	margin-bottom: 30px;
 }
 .section-padding-2 {
-    margin-top: 20px;
+    margin-top: 80px;
+
+	
 }
 .section-title .title-line {
-    color: #000;
+    color: #FFD700;
     position: relative;
 	font-weight: bold;
 	top: -20px;
 }
 
 .section-title .title-line::before {
-	background-color: #333;
+	background-color: #000;
     content: "";
     height: 2px;
-    left: 100px;
+    left: 0px;
     position: absolute;
-   top:20px;
+    top:20px;
     width: 50px;
 }
 .section-title .title-line::after {
     background-color: #333;
     content: "";
     height: 2px;
-    left: -150px;
+    left: 0px;
     position: absolute;
     top: 20px;
     width: 50px;
@@ -539,6 +560,9 @@ ul.slick-dots {
 .service-item .down-content {
 	background-color: #f7f7f7;
 	padding: 30px;
+	position: relative;
+	top:100px;
+
 }
 
 .service-item .down-content h4 {
@@ -558,10 +582,11 @@ ul.slick-dots {
 
 
 .section-title .title-line-2 {
-    color: #000;
+    color: #FFD700;
     position: relative;
 	font-weight: bold;
-	top: -20px;
+	font-size: 70px;
+	top: -200px;
 }
 
 .section-title .title-line-2::before {
@@ -603,18 +628,29 @@ a.filled-button-4:hover {
 
 	
 }
+.back{
+	margin-top: 90px;
+	background-image: url(../images/service.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #FFD700;
+}
 
 /* Fun Facts */
 
 .fun-facts {
 	margin-top: 140px;
-	background-image: url(../images/home4.jpg);
+	background-color: #f7f7f7;
+	background-image: url(../images/marche.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	padding: 140px 0px;
+	padding: 50px 0px;
 	color: #fff;
+	margin-bottom: 100px;
 }
 
 .fun-facts span {
@@ -634,16 +670,23 @@ a.filled-button-4:hover {
 
 .fun-facts em {
 	font-style: normal;
-	color: #a4c639;
+	color: #000;
+	text-align: center;
+	font-weight: bold;
 }
 
 .fun-facts p {
-	color: #fff;
+	color: #000;
 	margin-bottom: 40px;
 }
 
 .fun-facts .left-content {
-	margin-right: 45px;
+	margin-right: 45px; 
+
+	
+}
+.align-self-center{
+	background-color: #000;
 }
 
 .count-area-content {
@@ -653,25 +696,14 @@ a.filled-button-4:hover {
 	margin: 15px 0px;
 }
 
-.count-digit {
-    margin: 5px 0px;
-    color: #a4c639;
-    font-weight: 700;
-    font-size: 36px;
-}
-.count-title {
-    font-size: 20px;
-    font-weight: 600;
-    color: #fff;
-    letter-spacing: 0.5px;
-}
+
 
 
 
 /* More Info */
 
 .more-info {
-	margin-top: 100px;
+	margin-top: 50px;
 	margin-bottom: 0%;
 }
 
@@ -707,8 +739,8 @@ a.filled-button-4:hover {
 	display: block;
 }
 
-.more-info .right-content h2 {
-	font-size: 36px;
+.more-info .right-content h3 {
+	font-size: 30px;
 	font-weight: 600;
 	margin-bottom: 35px;
 }
@@ -727,26 +759,19 @@ a.filled-button-3 {
 	font-size: 15px;
 	text-transform: uppercase;
 	font-weight: 700;
-	padding: 12px 30px;
+	padding: 15px 30px;
 	border-radius: 30px;
 	display: inline-block;
 	transition: all 0.3s;
-	position: relative;
-	right: inherit;
-	right: -20px;
-	width: 200px;
-	height: 50px;
-	text-align: center;
+	margin-left: 0px;
 }
-
-
 a.filled-button-3:hover {
-	background-color: #000	;
-	color: #FFD700; 
-	
+	background-color: #FFD700	;
+	color: #000;
 
-	
 }
+
+
 
 /* Testimonials Style */
 
@@ -781,7 +806,7 @@ a.filled-button-3:hover {
 	margin-top: 8px;
 	font-weight: 600;
 	font-size: 14px;
-	color: #a4c639;
+	color: #FFD700;
 }
 .testimonial-item img {
 	max-width: 60px;
@@ -916,28 +941,6 @@ a.filled-button-3:hover {
 }
 
 
-
-/* Partners Style */
-
-.contact-partners {
-	margin-top: -8px!important;
-}
-
-.partners {
-	margin-top: 140px;
-	background-color: #f7f7f7;
-	padding: 60px 0px;
-}
-
-.partners .owl-item {
-	text-align: center;
-	cursor: pointer;
-}
-
-.partners .partner-item img {
-	max-width: 156px;
-	margin: auto;
-}
 
 
 /* contact Form */
@@ -1283,7 +1286,7 @@ footer .contact-form button.filled-button:hover {
 }
 
 .contact-information .contact-item i {
-	color: #a4c639;
+	color: #FFD700;
 	font-size: 48px;
 	margin-bottom: 40px;
 }
@@ -1301,7 +1304,7 @@ footer .contact-form button.filled-button:hover {
 
 .contact-information .contact-item a {
 	font-weight: 600;
-	color: #a4c639;
+	color: #FFD700;
 	font-size: 15px;
 }
 
@@ -1343,6 +1346,7 @@ footer .contact-form button.filled-button:hover {
 	}
 	.services .service-item {
 		margin-bottom: 30px;
+		
 	}
 	.fun-facts .left-content {
 		margin-right: 0px;

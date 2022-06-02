@@ -1,5 +1,4 @@
 /*navbar*/
-
 .sub-header {
 	background-color: #FFD700	;
 	height: 46px;
@@ -101,7 +100,7 @@ header .navbar {
 	outline: none;
 }
 .navbar .navbar-brand h2 {
-	color: #fff;
+	color: #000;
 	text-transform: uppercase;
 	font-size: 24px;
 	font-weight: 700;
@@ -128,7 +127,7 @@ header .navbar {
 	font-size: 15px;
 	font-weight: 300;
 	letter-spacing: 0.5px;
-	color: #fff;
+	color: #000;
 	transition: all 0.5s;
 	margin-top: 5px;
 	font-weight: bold;
@@ -147,7 +146,7 @@ header .navbar {
 	background-image: none;
 }
 .navbar .navbar-toggler {
-	border-color: #fff;
+	border-color: #000;
 	background-color: #fff;	
 	height: 36px;
 	outline: none;
@@ -199,14 +198,14 @@ a.filled-button {
 }
 
 a.filled-button:hover {
-	background-color: #000;
+	background-color: #fff;
 	color: #FFD700	;
 }
 
 a.border-button {
 	background-color: transparent;
-	color: #fff;
-	border: 2px solid #fff;
+	color: #000;
+	border: 2px solid #000;
 	font-size: 13px;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -233,7 +232,7 @@ a.border-button:hover {
   }
   
 .menu > li > a {
-	color: #fff;
+	color: #000;
 	display: block;
 	 padding: 10px 20px ; 
 	text-align: center;
@@ -265,6 +264,6 @@ a.border-button:hover {
 
   }
   .menu ul a:hover {
-	background-color: #f1f1f1;
+	background-color: #fff;
 	cursor:pointer;
   }
