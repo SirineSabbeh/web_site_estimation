@@ -27,12 +27,12 @@ https://templatemo.com/tm-545-finance-business
 
 .sub-header ul.left-info li i {
 	margin-right: 10px;
-	font-size: 18px;
+	font-size: 14px;
 }
 
 .sub-header ul.left-info li a {
 	color: #000;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 600;
 }
 
@@ -201,6 +201,7 @@ a.filled-button {
 	border-radius: 30px;
 	display: inline-block;
 	transition: all 0.3s;
+	width: 220px;
 }
 
 
@@ -212,7 +213,7 @@ a.filled-button:hover {
 }
 
 a.border-button {
-	background-color: transparent;
+	background-color: #FFD700;
 	color: #fff;
 	border: 2px solid #fff;
 	font-size: 13px;
@@ -333,7 +334,7 @@ a.border-button:hover {
 	background-image: url(../images/home8.jpg);
 }
 .Modern-Slider .item-2 .img-fill {
-	background-image: url(../images/home7.jpg);
+	background-image: url(../images/home9.jpg);
 }
 
 .Modern-Slider .NextArrow{
@@ -630,7 +631,7 @@ a.filled-button-4:hover {
 }
 .back{
 	margin-top: 90px;
-	background-image: url(../images/service.jpg);
+	background-image: url(../images/service1.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -666,6 +667,7 @@ a.filled-button-4:hover {
 	font-size: 36px;
 	font-weight: 600;
 	margin-bottom: 35px;
+	text-align: center;
 }
 
 .fun-facts em {
@@ -673,6 +675,7 @@ a.filled-button-4:hover {
 	color: #000;
 	text-align: center;
 	font-weight: bold;
+	text-align: center;
 }
 
 .fun-facts p {
@@ -685,13 +688,11 @@ a.filled-button-4:hover {
 
 	
 }
-.align-self-center{
-	background-color: #000;
-}
+
 
 .count-area-content {
 	text-align: center;
-	background-color: rgba(250,250,250,0.1);
+	background-color: rgba(0,0,0,0.8);
 	padding: 25px 30px 35px 30px;
 	margin: 15px 0px;
 }
@@ -992,11 +993,12 @@ footer p {
 
 footer ul.social-icons {
 	margin-top: 25px;
+	margin-left: -15px;
 }
 
 footer ul.social-icons li {
 	display: inline-block;
-	margin-right: 5px;
+	 margin-right: 8px; 
 }
 
 footer ul.social-icons li:last-child {
@@ -1016,7 +1018,7 @@ footer ul.social-icons li a {
 }
 
 footer ul.social-icons li a:hover {
-	background-color: #a4c639;
+	background-color: #FFD700;
 }
 
 footer ul.menu-list li {
@@ -1034,7 +1036,7 @@ footer ul.menu-list li a {
 }
 
 footer ul.menu-list li a:hover {
-	color: #a4c639;
+	color: #FFD700;
 }
 
 footer .contact-form input {
@@ -1114,11 +1116,7 @@ footer .contact-form button.filled-button:hover {
 	background-color: #fff;
 	color: #FFD700;
 }
-
-
-
 /* Sub-footer Style */
-
 .sub-footer {
 	background-color: #343434;
 	text-align: center;
@@ -1162,44 +1160,6 @@ footer .contact-form button.filled-button:hover {
 	display: block;
 }
 
-
-/* team */
-
-.team {
-	background-color: #f7f7f7;
-	margin-top: 140px;
-	margin-bottom: -140px;
-	padding: 120px 0px;
-}
-
-.team-item img {
-	width: 100%;
-	overflow: hidden;
-}
-
-.team-item .down-content {
-	background-color: #fff;
-	padding: 30px;
-}
-
-.team-item .down-content h4 {
-	font-size: 20px;
-	font-weight: 700;
-	letter-spacing: 0.25px;
-	margin-bottom: 10px;
-}
-
-.team-item .down-content span {
-	color: #FFD700;
-	font-weight: 600;
-	font-size: 14px;
-	display: block;
-	margin-bottom: 15px;
-}
-
-.team-item .down-content p {
-	margin-bottom: 20px;
-}
 
 
 /* Single Service */
@@ -1362,6 +1322,13 @@ footer .contact-form button.filled-button:hover {
 		border-bottom: 1px solid #343434;
 		margin-bottom: 30px;
 		padding-bottom: 30px;
+		margin-left: 100px;
+	}
+	footer .footer-item  a {
+		color: #FFF;
+	}
+	footer .footer-item  a:hover {
+		color: #FFD700;
 	}
 	footer .last-item {
 		border-bottom: none;
