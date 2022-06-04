@@ -1136,7 +1136,7 @@ footer .contact-form button.filled-button:hover {
 
 .page-heading {
 	text-align: center;
-	background-image: url(../images/page-heading-bg.jpg);
+	background-image: url(../images/image.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1146,18 +1146,19 @@ footer .contact-form button.filled-button:hover {
 
 .page-heading h1 {
 	text-transform: capitalize;
-	font-size: 36px;
+	font-size: 42px;
 	font-weight: 700;
 	letter-spacing: 2px;
 	margin-bottom: 18px;
 }
 
 .page-heading span {
-	font-size: 15px;
+	font-size: 17px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #fff;
 	display: block;
+	font-weight: bold;
 }
 
 
