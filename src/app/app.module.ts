@@ -12,6 +12,7 @@ import { ContactComponent } from './Pages/contact/contact.component';
 import { ParticulerestimationComponent } from './Pages/particulerestimation/particulerestimation.component';
 import { EntrepriseestimationComponent } from './Pages/entrepriseestimation/entrepriseestimation.component';
 import { ServicesComponent } from './Pages/services/services.component';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -32,7 +33,9 @@ import { ServicesComponent } from './Pages/services/services.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     {provide:LocationStrategy,useClass:HashLocationStrategy}

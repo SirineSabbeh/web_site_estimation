@@ -1,15 +1,26 @@
     <!-- Page Content -->
-    <div class="page-heading header-text">
+    <div class="page-heading header-text  more-info-content-2  ">
         <div class="container">
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 ">
               <h1>CONTACTEZ-NOUS</h1>
               <span>N’hésitez pas à nous envoyer un message maintenant!</span>
             </div>
           </div>
         </div>
       </div>
-  
+      <div style="margin-bottom:10px;"></div>
+      <div id="map">
+        <!-- How to change your own map point
+            1. Go to Google Maps
+            2. Click on your location point
+            3. Click "Share" and choose "Embed map" tab
+            4. Copy only URL and paste it within the src="" field below
+        -->     
+        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d12304166.303512298!2d-4.032034110047986!3d41.15751105826912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x12fd6392f2b26221%3A0xe9cf290510e9a7c3!2sM%C3%A9hari%20Hammamet%2C%20Yasmine%20Hammamet!3m2!1d36.3632716!2d10.5346542!4m5!1s0x480730335fd89e25%3A0x8648b9f6d935ed48!2s13%20Avenue%20de%20Paris%2C%20Niort%2C%20France!3m2!1d46.324383999999995!2d-0.4568448!5e0!3m2!1sfr!2stn!4v1654348733407!5m2!1sfr!2stn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            </div>
+        
       <div class="contact-information">
         <div class="container">
           <div class="row">
@@ -18,65 +29,81 @@
                 <i class="fa fa-phone"></i>
                 <h4>Phone</h4>
                 <p>Vivamus ut tellus mi. Nulla nec cursus elit, id vulputate nec cursus augue.</p>
-                <a href="#">090-080-0760</a>
+                <a href=".">090-080-0760</a>
               </div>
             </div>
+          
+           
             <div class="col-md-4">
               <div class="contact-item">
                 <i class="fa fa-envelope"></i>
                 <h4>Email</h4>
                 <p>Vivamus ut tellus mi. Nulla nec cursus elit, id vulputate nec cursus augue.</p>
-                <a href="#">info@company.com</a>
+                <a href=".">info@company.com</a>
               </div>
+           
             </div>
+            
             <div class="col-md-4">
               <div class="contact-item">
                 <i class="fa fa-map-marker"></i>
                 <h4>Location</h4>
                 <p>1020 New Mountain Street<br>Forest Park, FP 11220</p>
-                <a href="#">View on Google Maps</a>
+                <a href=".">View on Google Maps</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
+        
+     
   
       <div class="callback-form contact-us">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <div class="section-heading">
-                <h2>Send us a <em>message</em></h2>
-                <span>Suspendisse a ante in neque iaculis lacinia</span>
+                <h2>Envoyez-nous un <em>message</em></h2>
+              
               </div>
             </div>
             <div class="col-md-12">
               <div class="contact-form">
-                <form id="contact" action="" method="get">
+                <form [formGroup]="myform" (ngSubmit)="print()">
                   <div class="row">
                     <div class="col-lg-4 col-md-12 col-sm-12">
                       <fieldset>
-                        <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                        <input  type="text" class="form-control" placeholder="nom complet" formControlName="fullname" required>
+
+                        <p class="text-danger contact-valid" *ngIf="fullname.touched && fullname.hasError('required')">ce champ est obligatoire</p>
+
+                      </fieldset>
+                    </div>   
+
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                      <fieldset>
+                        <input name="email" type="email" class="form-control" pattern="[^ @]*@[^ @]*" placeholder="adresse e-mail" formControlName="email" required>
+                        <p class="text-danger contact-valid" *ngIf="email.touched && email.hasError('required')">ce champ est obligatoire</p>
+                        <div class="text-danger contact-valid"  *ngIf="email.hasError('email')">adresse email invalid</div>
+
                       </fieldset>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12">
                       <fieldset>
-                        <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
-                      </fieldset>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                      <fieldset>
-                        <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="">
+                        <input name="subject" type="text" class="form-control"  placeholder="Sujet" formControlName="subject" required>
+                        <p class="text-danger contact-valid" *ngIf="subject.touched && subject.hasError('required')">ce champ est obligatoire</p>
+
                       </fieldset>
                     </div>
                     <div class="col-lg-12">
                       <fieldset>
-                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                        <textarea name="message" rows="6" class="form-control"  placeholder="votre message" formControlName="message" required></textarea>
+                        <p class="text-danger contact-valid-message" *ngIf="message.touched && message.hasError('required')">ce champ est obligatoire</p>
+
                       </fieldset>
                     </div>
                     <div class="col-lg-12">
                       <fieldset>
-                        <button type="submit" id="form-submit" class="filled-button">Send Message</button>
+                        <button type="submit" class="filled-button" [disabled]="myform.invalid">Envoyer un message</button>
                       </fieldset>
                     </div>
                   </div>
@@ -87,27 +114,18 @@
         </div>
       </div>
   
-      <div id="map">
-  <!-- How to change your own map point
-      1. Go to Google Maps
-      2. Click on your location point
-      3. Click "Share" and choose "Embed map" tab
-      4. Copy only URL and paste it within the src="" field below
-  -->
-        <iframe src="https://maps.google.com/maps?q=Av.+Lúcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-  
       <div class="partners contact-partners">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <div class="owl-partners owl-carousel">
                 <div class="partner-item">
-                  <img src="assets/images/client-01.png" alt="">
+                  <img src="assets/images/client.jpg" alt="">
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      
   

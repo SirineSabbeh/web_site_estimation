@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="assets/css/fontawesome.css">
 <link rel="stylesheet" href="assets/css/transport.css">
 <link rel="stylesheet" href="assets/css/owl.css">
+<link rel="stylesheet" href="https://unpkg.com/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
     </head>
 <body>
@@ -55,6 +56,18 @@
           t.style.color='#fff';
           }
       }
+
+
+$(document).ready(function(){ 
+
+$('.nav-item').on("click", function(){
+
+$('.nav-item').removeClass('active');
+
+$(this).addClass('active');
+});
+});
+ 
     </script>
 
   </body>
